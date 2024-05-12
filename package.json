@@ -6,6 +6,7 @@
     "install": "playwright install",
     "e2e": "playwright test --config playwright.config.ts",
     "e2e-dev": "pnpm run e2e --project=dev",
+    "e2e-prod": "pnpm run e2e --project=prod",
     "e2e-dev-headed": "pnpm run e2e-dev --headed",
     "e2e-dev-debug": "pnpm run e2e-dev --debug",
     "codegen": "pnpm playwright codegen"
