@@ -1,0 +1,18 @@
+{
+  "name": "playwright",
+  "private": "true",
+  "scripts": {
+    "docker-start": "docker-compose up -d",
+    "install": "playwright install",
+    "e2e": "playwright test --config playwright.config.ts",
+    "e2e-dev": "pnpm run e2e --project=dev",
+    "e2e-dev-headed": "pnpm run e2e-dev --headed",
+    "e2e-dev-debug": "pnpm run e2e-dev --debug",
+    "codegen": "pnpm playwright codegen"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.43.0",
+    "@types/node": "20.11.24",
+    "dotenv": "16.4.5"
+  }
+}
